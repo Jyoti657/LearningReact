@@ -15,7 +15,8 @@ const App = () => {
   //   }
   // };
   const fetchSearchData = async () => {
-    if(cache[input]) {
+    if (cache[input]) {
+      console.log("Cache hit for:", input);
       setItemResult(cache[input]);
       return;
     }
